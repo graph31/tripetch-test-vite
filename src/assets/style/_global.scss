@@ -1,0 +1,42 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+h1 {
+    color: #E7E7E7;
+}
+
+h3 {
+    color: #C2C2C2;
+    letter-spacing: 1.50px;
+    word-wrap: break-word;
+}
+
+@include media-breakpoint-up(sm) {
+    h1 {
+        font-size: 3.125rem;
+    }
+
+    h3 {
+        font-size: 1.75rem;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    h1 {
+        font-size: 5.625rem;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    h1 {
+        font-size: 5.625rem;
+    }
+
+    h3 {
+        font-size: 1.75rem;
+    }
+}

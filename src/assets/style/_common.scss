@@ -1,0 +1,31 @@
+.group-number {
+    margin-bottom: 0.5rem;
+
+    .number {
+        color: black;
+        font-size: 18px;
+        letter-spacing: 1.50px;
+        word-wrap: break-word
+    }
+
+    .underline {
+        margin-top: 4px;
+        width: 19px;
+        height: 5px;
+        background: #603EBE;
+        border-radius: 2.50px
+    }
+}
+
+
+.description {
+    color: black;
+    font-size: 20px;
+    line-height: 28px;
+    word-wrap: break-word
+}
+
+.icon-plus {
+    width: 15px;
+    height: 15px;
+}
