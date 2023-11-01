@@ -1,13 +1,15 @@
 <script setup lang="ts">
-// import Desktop from './components/Desktop.vue'
-// import Content from './components/Content.vue'
-import Mobile from './components/Mobile.vue'
+import Basketball from './components/Basketball.vue'
+import Footballer from './components/Footballer.vue'
 </script>
 
 <template>
-  <Mobile />
-  <!-- <Content />
-  <Desktop /> -->
+  <section>
+    <Footballer />
+  </section>
+  <section>
+    <Basketball />
+  </section>
 </template>
 
 <style scoped></style>
