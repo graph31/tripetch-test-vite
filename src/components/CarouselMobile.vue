@@ -1,44 +1,20 @@
 <template>
-    <div id="carouselContent" class="col-sm-12 carousel slide " data-bs-ride="true">
+    <div :id="`carousel-content-${props.mode}`" class="col-sm-12 carousel slide " data-bs-ride="true">
         <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselContent" data-bs-slide-to="0" class="active" aria-current="true"
-                aria-label="Slide 1"></button>
-            <button type="button" class="mx-2" data-bs-target="#carouselContent" data-bs-slide-to="1"
+            <button type="button" :data-bs-target="`#carousel-content-${props.mode}`" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" class="mx-2" :data-bs-target="`#carousel-content-${props.mode}`" data-bs-slide-to="1"
                 aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselContent" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" :data-bs-target="`#carousel-content-${props.mode}`" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-            <div class="carousel-item ">
+            <div v-for="({ title, desc }, index) in props.content" class="carousel-item" :class="{ 'active': index === 0 }">
                 <div class="row">
                     <div class="col-sm-12 col-md-8 offset-md-4 col-lg-6 offset-lg-6">
-                        <Content title="CONNECTION" number="01">
-                            Connect with coaches directly, you can ping coaches to view profile.
+                        <Content :title="title" :number="`0${index + 1}`">
+                            {{ desc }}
                         </Content>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item  active">
-                <div class="row tp-bg-secondary">
-                    <div class="col-sm-12 col-md-8 offset-md-4 col-lg-6 offset-lg-6">
-
-                        <Content title="COLLABORATION" number="02">
-                            Work with other student athletes to  increase visability. When you share and like
-                            other
-                            players
-                            videos it will increase your visability as a player. This is the team work aspect to
-                            Surface 1.
-                        </Content>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item ">
-                <div class="row tp-bg-primary">
-                    <div class="col-sm-12 col-md-8 offset-md-4 col-lg-6 offset-lg-6">
-                        <Content title="GROWTH" number="03">
-                            Resources and tools for you to get better as a student Athelte.
-                            Access to training classes, tutor sessions, etc
-                        </Content>
-
                     </div>
                 </div>
             </div>
@@ -49,6 +25,13 @@
 
 <script setup lang="ts">
 import Content from './common/Content.vue'
+
+
+const props = defineProps({
+    mode: String,
+    content: Array,
+
+})
 </script>
 
 <style lang="scss" scoped>

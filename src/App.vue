@@ -5,11 +5,10 @@ import Footballer from './components/Footballer.vue'
 
 <template>
   <section>
-    <Footballer />
+    <Footballer id="footballer" />
   </section>
   <section>
-    <Basketball />
+    <Basketball id="basketball" />
   </section>
 </template>
 
-<style scoped></style>

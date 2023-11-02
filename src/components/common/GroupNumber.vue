@@ -9,6 +9,6 @@ defineProps<{ number: string }>()
         <span class="number">
             {{ number }}
         </span>
-        <div class="underline"> </div>
+        <div class="mx-sm-auto underline"> </div>
     </div>
 </template>

@@ -24,19 +24,18 @@
     word-wrap: break-word
 }
 
+span.icon-plus {
+    position: absolute;
+    color: $base-color;
+    stroke: $base-color-stroke;
+    font-size: 18px;
+    stroke-width: 1px;
+}
 
 .section-footballer {
     width: 218px;
-    // img.footballer-url {
-    //     fill: url(../assets/images/football.png), lightgray 0px 0px / 100% 100% no-repeat;
-    // }
 
     .icon-plus {
-        position: absolute;
-        color: $base-color;
-        stroke: $base-color-stroke;
-        font-size: 18px;
-
         &:nth-child(1) {
             left: 0px;
             top: 11px;
@@ -47,6 +46,33 @@
             top: 7px;
         }
 
+        &.icon-gray {
+            opacity: 0.30;
+        }
+
+    }
+}
+
+
+.section-basketball {
+    width: 218px;
+
+    span.icon-plus {
+
+        &:nth-child(3) {
+            left: 49px;
+            top: 1px;
+        }
+
+        &:nth-child(4) {
+            left: 71px;
+            top: 8px;
+        }
+
+        &:nth-child(5) {
+            left: 266px;
+            top: 149px;
+        }
 
         &.icon-gray {
             opacity: 0.30;
