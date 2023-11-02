@@ -15,7 +15,7 @@
 
 <script setup lang="ts">
 import GroupNumber from '../common/GroupNumber.vue'
-defineProps<{ title: String; number: String }>()
+defineProps<{ title: string; number: string }>()
 </script>
 
 <style scoped></style>
