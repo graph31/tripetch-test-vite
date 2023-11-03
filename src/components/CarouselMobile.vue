@@ -9,11 +9,11 @@
                 aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-            <div v-for="({ title, desc }, index) in props.content" class="carousel-item" :class="{ 'active': index === 0 }">
+            <div v-for="( item, index ) in  props.content    " class="carousel-item" :class="{ 'active': index === 0 }">
                 <div class="row">
                     <div class="col-sm-12 col-md-8 offset-md-4 col-lg-6 offset-lg-6">
-                        <Content :title="title" :number="`0${index + 1}`">
-                            {{ desc }}
+                        <Content :title="item.title" :number="`0${index + 1}`">
+                            {{ item.desc }}
                         </Content>
                     </div>
                 </div>
@@ -23,14 +23,17 @@
     </div>
 </template>
 
-<script setup lang="ts">
-import Content from './common/Content.vue'
+<script setup lang="ts" generic="T extends { title: string, desc: string }">
 
+import Content from './common/Content.vue'
 
 const props = defineProps({
     mode: String,
-    content: Array,
-
+    content: {
+        default() {
+            return [] as T[];
+        },
+    },
 })
 </script>
 

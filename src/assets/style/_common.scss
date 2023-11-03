@@ -3,7 +3,7 @@
     margin-right: 10px;
 
     .number {
-        color: black;
+        color: #000;
         font-size: 18px;
         letter-spacing: 1.50px;
         word-wrap: break-word
@@ -20,8 +20,8 @@
 
 
 .description {
-    color: black;
-    word-wrap: break-word
+    color: #000;
+    word-wrap: break-word;
 }
 
 span.icon-plus {
@@ -79,8 +79,4 @@ span.icon-plus {
         }
 
     }
-}
-
-.tp-mt-md {
-    margin-top: 0px !important;
 }

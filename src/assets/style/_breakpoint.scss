@@ -8,11 +8,14 @@
         font-size: 1.75rem; //28px
     }
 
-
     .containerMobile {
         display: block;
         position: relative;
         top: 14rem;
+    }
+
+    .carousel-indicators {
+        bottom: 14px !important;
     }
 
     .containerDesktop {
@@ -23,7 +26,26 @@
         margin-bottom: 12px;
     }
 
+    .group-number {
+        .number {
+            font-size: 14px;
+        }
+
+        .underline {
+            margin-top: 2px;
+            width: 17px;
+            height: 4px;
+        }
+    }
+
+    .description {
+        font-size: 15px;
+        line-height: normal;
+    }
+
     #footballer {
+        height: 580px;
+
         section {
             padding: 72px 0 60px 0px;
             min-height: 284px;
@@ -77,24 +99,10 @@
 
     }
 
-    .group-number {
-        .number {
-            font-size: 14px !important;
-        }
 
-        .underline {
-            margin-top: 2px !important;
-            width: 17px !important;
-            height: 4px !important;
-        }
-    }
-
-    .description {
-        font-size: 15px;
-        line-height: normal;
-    }
 
     #basketball {
+        height: 534px;
 
         section {
             padding: 72px 0 60px 0px;
@@ -143,9 +151,6 @@
         }
     }
 
-    .carousel-indicators {
-        bottom: 14px !important;
-    }
 
 
 }
@@ -168,28 +173,51 @@
         display: block;
     }
 
-
-
-
-    .footballer {
-        top: 20px;
-        right: 14rem;
-        position: relative;
+    .line-45 {
+        width: 217px;
+        height: 233px;
+        left: 15px;
+        top: 40px;
+        position: absolute;
     }
 
-    .section-footballer {
-        position: relative;
-        height: 0px;
-        bottom: 45rem;
-        right: 2rem;
+    .tp-mt-md {
+        margin-top: 87px !important;
+    }
+
+    .group-number {
+        .number {
+            font-size: 18px;
+        }
+    }
+
+    .description {
+        font-size: 18px;
+        line-height: 28px;
     }
 
     #footballer {
+        height: 819px;
+
+        .section-footballer {
+            position: relative;
+            height: 0px;
+            bottom: 45.5rem;
+            right: 1.5rem;
+        }
 
         img.footballer {
             width: 518px;
-            height: 699px;
+            height: 718px;
         }
+
+        .footballer {
+            top: 20px;
+            right: 14rem;
+            position: relative;
+        }
+
+
 
         section {
             min-height: 200px;
@@ -236,30 +264,102 @@
 
     }
 
+    #basketball {
+        height: 732px;
 
-
-    .description {
-        font-size: 18px;
-        line-height: 28px;
-    }
-
-    .line-45 {
-        width: 217px;
-        height: 233px;
-        left: 15px;
-        top: 40px;
-        position: absolute;
-    }
-
-    .tp-mt-md {
-        margin-top: 87px !important;
-    }
-
-    .group-number {
-        .number {
-            font-size: 18px;
+        .player-top {
+            margin-top: 0px;
         }
+
+        section {
+            padding: 34px 0 10px 0px;
+            min-height: 190px;
+            background-color: transparent;
+        }
+
+        .section-basketball {
+            width: 691px;
+            height: 568px;
+            left: 331px;
+            top: -8.75rem;
+
+            .icon-plus {
+
+
+                &:nth-child(3) {
+                    top: 89px;
+                    left: 224px;
+                }
+
+                &:nth-child(4) {
+                    top: 72px;
+                    left: 202px;
+                }
+
+            }
+        }
+
+        img.basketball {
+            width: 691px;
+            height: 568px;
+        }
+
+
+
+
+        .line-45 {
+            width: 178.877px;
+            height: 207.224px;
+            left: 150px;
+            top: 263.89px;
+            position: absolute;
+
+        }
+
+        .tp-bg-secondary {
+            background-color: $section-color;
+
+            section {
+                padding: 51px 0px 65px 15px;
+                height: 235px;
+            }
+
+
+            .group-number {
+                .underline {
+                    width: 22px;
+                }
+            }
+        }
+
+
+        .tp-bg-primary {
+            background-color: #090C35;
+
+            section {
+                padding: 72px 0px;
+                height: 207px;
+            }
+
+            .group-number {
+                .number {
+                    color: #8765DD;
+                }
+
+                .underline {
+                    background: #FFF;
+                    width: 22px;
+                }
+            }
+
+            .description {
+                color: #FFF;
+            }
+        }
+
     }
+
+
 
 
 }
@@ -282,6 +382,9 @@
         font-size: 1.75rem;
     }
 
+    .tp-mt-md {
+        margin-top: 0px !important;
+    }
 
     .footballer {
         height: 950px !important;
@@ -296,32 +399,68 @@
     }
 
     #footballer {
+        height: 961px;
+
+        .footballer {
+            top: 11px;
+            right: 10rem;
+        }
+
         img.footballer {
             width: 678px;
             height: 950px;
             margin-left: 75px;
         }
 
+
         section {
             margin-right: 197px;
+            padding: 3.688rem 0 3.5rem;
         }
+
 
         .tp-bg-secondary {
+            background-color: $section-color;
+
             section {
                 height: 256px;
+                padding: 3.313rem 0 3.5rem;
+            }
+
+
+            .group-number {
+                .underline {
+                    width: 22px;
+                }
             }
         }
 
+
         .tp-bg-primary {
+
             section {
                 height: 297px;
+                padding: 5rem 0 6.125rem;
+            }
+
+            .group-number {
+                .underline {
+                    background: #FFF;
+                    width: 22px;
+                }
+            }
+
+            .description {
+                color: #FFF;
             }
         }
+
 
     }
 
     .description {
         line-height: 28px;
+        font-size: 20px;
     }
 
     .group-number {

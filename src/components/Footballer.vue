@@ -9,7 +9,7 @@
         </div>
         <div id="footballer-content" class="position-relative">
             <div class="row containerDesktop">
-                <div v-for="(items, index) in  content " class="col-sm-12  col-lg-12"
+                <div v-for="(items, index) in  content " class="col-sm-12 col-md-12 col-lg-12"
                     :class="{ 'tp-bg-secondary': index === 1, 'tp-bg-primary': index === 2 }">
                     <div class="row">
                         <div class="col-sm-12 col-md-8 offset-md-4 col-lg-6 offset-lg-6">

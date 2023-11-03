@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="row player-top">
-            <div class="col-md-8 offset-md-4  col-lg-12">
+            <div class="col-md-12 col-lg-12">
                 <h1 class="text-left ps-3-sm">
                     PLAYERS
                 </h1>
@@ -9,10 +9,11 @@
         </div>
         <div class="position-relative">
             <div class="row containerDesktop">
-                <div v-for="(items, index) in  content " class="col-sm-12  col-lg-12"
+                <div v-for="(items, index) in  content " class="col-sm-12 col-md-12 col-lg-12"
                     :class="{ 'tp-bg-secondary': index === 1, 'tp-bg-primary': index === 2 }">
+
                     <div class="row">
-                        <div class="col-sm-12 col-md-8 offset-md-4 col-lg-6 offset-lg-6">
+                        <div class="col-sm-12 col-md-8 col-lg-12">
                             <Content :title="items.title" :number="`0${index + 1}`">
                                 {{ items.desc }}
                             </Content>
@@ -26,7 +27,7 @@
             </div>
             <div class="section-basketball">
                 <img class="line-45" src="../assets/svg/line-45.svg" alt="">
-                <img class="line-45" src="../assets/svg/line-45-2.svg" alt="">
+                <img class="line-45 d-md-none" src="../assets/svg/line-45-2.svg" alt="">
 
                 <span class="icon-plus icon-gray  ">
                     <font-awesome-icon icon="fa-solid fa-plus" />
@@ -34,7 +35,7 @@
                 <span class="icon-plus ">
                     <font-awesome-icon icon="fa-solid fa-plus" />
                 </span>
-                <span class="icon-plus icon-gray">
+                <span class="icon-plus icon-gray  d-md-none">
                     <font-awesome-icon icon="fa-solid fa-plus" />
                 </span>
                 <img class="basketball" src="../assets/images/basketball.png" />
@@ -50,6 +51,7 @@ import { ref } from 'vue'
 
 import Content from './common/Content.vue'
 import CarouselMobile from './CarouselMobile.vue'
+
 
 const content = ref([{
     title: 'CONNECTION',
