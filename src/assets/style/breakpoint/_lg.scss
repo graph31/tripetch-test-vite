@@ -1,0 +1,222 @@
+@include media-breakpoint-up(lg) {
+
+    .containerMobile {
+        display: none;
+    }
+
+    .containerDesktop {
+        display: block;
+    }
+
+    h1 {
+        font-size: 5.625rem;
+    }
+
+    h3 {
+        font-size: 1.75rem;
+    }
+
+    .tp-mt-md {
+        margin-top: 0px !important;
+    }
+
+    .footballer {
+        height: 950px !important;
+    }
+
+    .section-footballer {
+        position: relative;
+        height: 0px;
+        top: -54rem;
+        left: 10rem;
+
+    }
+
+    #footballer {
+        height: 961px;
+
+        .footballer {
+            top: 11px;
+            right: 10rem;
+        }
+
+        img.footballer {
+            width: 678px;
+            height: 950px;
+            margin-left: 75px;
+        }
+
+
+        section {
+            margin-right: 197px;
+            padding: 3.688rem 0 3.5rem;
+        }
+
+
+        .tp-bg-secondary {
+            background-color: $section-color;
+
+            section {
+                height: 256px;
+                padding: 3.313rem 0 3.5rem;
+            }
+
+
+            .group-number {
+                .underline {
+                    width: 22px;
+                }
+            }
+        }
+
+
+        .tp-bg-primary {
+
+            section {
+                height: 297px;
+                padding: 5rem 0 6.125rem;
+            }
+
+            .group-number {
+                .underline {
+                    background: #FFF;
+                    width: 22px;
+                }
+            }
+
+            .description {
+                color: #FFF;
+            }
+        }
+
+
+    }
+
+    #basketball {
+
+        height: 998px;
+
+        .player-top {
+            padding-top: 124px;
+        }
+
+        img.basketball {
+            width: 991px;
+            height: 815px;
+            right: auto;
+        }
+
+        .section-basketball {
+            width: 991px;
+            height: 815px;
+            right: 106px;
+            left: auto;
+            top: -16rem;
+
+            span.icon-plus {
+                &:nth-child(3) {
+                    top: 148px;
+                    left: 316px;
+                }
+
+                &:nth-child(4) {
+                    top: 131px;
+                    left: 294px;
+                }
+
+                &:nth-child(5) {
+                    top: 401px;
+                    left: 774px;
+                }
+
+            }
+        }
+
+        .line-rotate-45 {
+            stroke-width: 6px;
+            stroke: $line-color;
+            margin-top: 4px;
+            height: 5px;
+            background: $line-color;
+            transform: rotate(311deg);
+            width: 262.516px;
+            top: 457.84px;
+            left: 185.13px;
+            position: absolute;
+        }
+
+        .line-45 {
+            width: 262.516px;
+            height: 304.117px;
+            top: 457.84px;
+            left: 185.13px;
+            position: absolute;
+
+            &:nth-child(2) {
+                width: 265.625px;
+                height: 311.16px;
+                top: 81px;
+                left: 660.89px;
+            }
+        }
+
+
+        section {
+            margin-right: 197px;
+            padding: 68px 881px 69px 0 !important;
+        }
+
+
+        .tp-bg-secondary {
+            background-color: $section-color;
+
+            section {
+                height: 245px;
+                padding: 52px 881px 102px 0 !important;
+            }
+
+
+            .group-number {
+                .underline {
+                    width: 22px;
+                }
+            }
+        }
+
+
+        .tp-bg-primary {
+
+            section {
+                height: 240px;
+                padding: 87px 881px 62px 0 !important;
+            }
+
+            .group-number {
+                .underline {
+                    background: #FFF;
+                    width: 22px;
+                }
+            }
+
+            .description {
+                color: #FFF;
+            }
+        }
+    }
+
+
+    .description {
+        line-height: 28px;
+        font-size: 20px;
+    }
+
+    .group-number {
+        .number {
+            font-size: 18px;
+        }
+
+        // .underline {
+        //     width: 17px;
+        // }
+    }
+}
