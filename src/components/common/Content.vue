@@ -1,5 +1,5 @@
 <template>
-    <section class="px-sm-4 px-md-3">
+    <section class="px-sm-4 px-md-3 px-lg-0">
         <div class="d-flex align-items-center tp-content-bottom">
             <GroupNumber :number="number" />
             <h3 class="ml-3">
