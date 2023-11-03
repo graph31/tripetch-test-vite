@@ -1,9 +1,9 @@
 <template>
     <section class="px-sm-4 px-md-3">
         <div class="d-flex align-items-center tp-content-bottom">
-            <GroupNumber :number="props.number" />
+            <GroupNumber :number="number" />
             <h3 class="ml-3">
-                {{ props.title }}
+                {{ title }}
             </h3>
         </div>
 
@@ -16,10 +16,13 @@
 <script setup lang="ts">
 import GroupNumber from '../common/GroupNumber.vue'
 
-const props = defineProps({
-    title: String,
-    number: String
-})
+
+
+defineProps<{
+    title: string
+    number: string
+}>()
+
 
 
 </script>
