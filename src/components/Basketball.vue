@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="row player-top">
-            <div class="col-sm-12 col-md-5 offset-md-2 col-lg-12">
+            <div class="col-sm-12 col-md-12 col-lg-5 offset-lg-2">
                 <h1 class="text-left ps-3-sm">
                     PLAYERS
                 </h1>
@@ -13,7 +13,7 @@
                     :class="{ 'tp-bg-secondary': index === 1, 'tp-bg-primary': index === 2 }">
 
                     <div class="row">
-                        <div class="col-sm-12 col-md-5 offset-md-2 col-lg-12">
+                        <div class="col-sm-12 col-md-8 col-lg-5 offset-lg-2">
                             <Content :title="items.title" :number="`0${index + 1}`">
                                 {{ items.desc }}
                             </Content>
