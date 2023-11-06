@@ -1,5 +1,5 @@
 <template>
-    <div :id="`carousel-content-${props.mode}`" class="col-sm-12 carousel slide " data-bs-ride="true">
+    <div :id="`carousel-content-${props.mode}`" class="col-sm-12 carousel slide " data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" :data-bs-target="`#carousel-content-${props.mode}`" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
