@@ -26,16 +26,18 @@
                 <CarouselMobile mode="basketball" :content="content"></CarouselMobile>
             </div>
             <div class="section-basketball">
+
                 <div class="line-45">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268 309" fill="none">
-                        <path d="M3.13281 306.957L265.648 2.83984" stroke="#936EEA" stroke-width="6" />
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 127" fill="none">
+                        <path d="M2 125.117L108.346 1.91797" stroke="#936EEA" />
                     </svg>
                 </div>
 
 
                 <div class="line-45 d-md-none d-lg-block">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 271 316" fill="none">
-                        <path d="M2.89062 313.16L268.516 2" stroke="#936EEA" stroke-width="6" />
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 93" fill="none">
+                        <path d="M1.89062 91.1601L78.5816 1.32233" stroke="#936EEA" />
                     </svg>
                 </div>
 
@@ -45,7 +47,7 @@
                 <span class="icon-plus ">
                     <font-awesome-icon icon="fa-solid fa-plus" />
                 </span>
-                <span class="icon-plus icon-gray  d-md-none d-lg-block">
+                <span class="icon-plus d-md-none d-lg-block">
                     <font-awesome-icon icon="fa-solid fa-plus" />
                 </span>
                 <img class="basketball" src="../assets/images/basketball.png" />

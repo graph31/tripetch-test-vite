@@ -48,8 +48,17 @@
         line-height: normal;
     }
 
+    .icon-plus {
+        font-size: 15px;
+    }
+
     #footballer {
         height: 580px;
+
+        h1 {
+            margin-bottom: 0.688rem;
+        }
+
 
         section {
             padding: 72px 0 60px 0px;
@@ -75,6 +84,7 @@
             position: relative;
             height: 281px;
             bottom: 18rem;
+            margin: 0 auto;
         }
 
         .line-45 {
@@ -126,10 +136,16 @@
             top: 108.92px;
             position: absolute;
 
+
+            svg {
+                stroke-width: 3;
+                stroke: $line-color;
+            }
+
             &:nth-child(2) {
                 width: 76.691px;
                 height: 89.838px;
-                left: 183.89px;
+                left: 196.89px;
                 top: 23.32px;
             }
         }
@@ -138,7 +154,7 @@
         img.basketball {
             width: 302px;
             height: 249px;
-            right: 15px;
+            // right: 15px;
             top: 0px;
             position: absolute;
             flex-direction: column;
@@ -152,7 +168,7 @@
             height: 250px;
             position: absolute;
             top: 0px;
-            margin-top: 15px;
+            margin: 15px auto 0;
         }
     }
 

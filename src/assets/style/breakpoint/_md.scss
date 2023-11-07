@@ -32,6 +32,7 @@
         .number {
             font-size: 18px;
         }
+
     }
 
     .description {
@@ -60,6 +61,13 @@
             position: relative;
         }
 
+        .group-number {
+
+            .underline {
+                width: 18.584px;
+                height: 5px;
+            }
+        }
 
 
         section {
@@ -156,6 +164,20 @@
             left: 150px;
             top: 263.89px;
             position: absolute;
+
+            svg {
+                stroke-width: 5;
+                stroke: $line-color;
+            }
+        }
+
+
+        .group-number {
+
+            .underline {
+                width: 19px;
+                height: 5px;
+            }
         }
 
         .tp-bg-secondary {

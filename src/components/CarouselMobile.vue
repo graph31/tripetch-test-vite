@@ -67,8 +67,8 @@ const props = defineProps({
     }
 
     .active {
-        width: 12px;
-        height: 12px;
+        width: 10px;
+        height: 10px;
         margin: 0;
         background-color: #5C3CAF;
     }

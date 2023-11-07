@@ -152,6 +152,12 @@
             left: 185.13px;
             position: absolute;
 
+
+            svg {
+                stroke-width: 6;
+                stroke: $line-color;
+            }
+
             &:nth-child(2) {
                 width: 265.625px;
                 height: 311.16px;
